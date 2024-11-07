@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2d3748;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+  
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a5568;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+  
+#playarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+  
+#player1, #player2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d3748;
+    background-color: #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+canvas {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+  
+#restart {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4a5568;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+#restart:hover {
+    background-color: #2d3748;
+}
+  
+@media (max-width: 768px) {
+    #playarea {
+        flex-direction: column;
+    }
+  
+    #player1, #player2 {
+        margin: 10px 0;
+    }
+  
+    canvas {
+        width: 90%;
+        height: auto;
+    }
+}
+
+#c1, #c2, #c1_2, #c2_2 {
+    font-size: 24px;
+    margin-left: 5px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.hidden {
+    display: none;
+}
